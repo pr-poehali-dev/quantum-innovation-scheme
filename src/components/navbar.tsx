@@ -20,13 +20,16 @@ export function Navbar() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <a
-                href="#features"
+                href="#demo"
                 className="font-geist text-white hover:text-violet-500 transition-colors duration-200"
               >
-                Возможности
+                Платформа
               </a>
-              <a href="#applications" className="font-geist text-white hover:text-violet-500 transition-colors duration-200">
-                Форматы
+              <a href="#cases" className="font-geist text-white hover:text-violet-500 transition-colors duration-200">
+                Кейсы
+              </a>
+              <a href="#comparison" className="font-geist text-white hover:text-violet-500 transition-colors duration-200">
+                Сравнение
               </a>
               <a href="#faq" className="font-geist text-white hover:text-violet-500 transition-colors duration-200">
                 Вопросы
@@ -55,18 +58,25 @@ export function Navbar() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-black/98 border-t border-violet-500/20">
               <a
-                href="#features"
+                href="#demo"
                 className="block px-3 py-2 font-geist text-white hover:text-violet-500 transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
-                Возможности
+                Платформа
               </a>
               <a
-                href="#applications"
+                href="#cases"
                 className="block px-3 py-2 font-geist text-white hover:text-violet-500 transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
-                Форматы
+                Кейсы
+              </a>
+              <a
+                href="#comparison"
+                className="block px-3 py-2 font-geist text-white hover:text-violet-500 transition-colors duration-200"
+                onClick={() => setIsOpen(false)}
+              >
+                Сравнение
               </a>
               <a
                 href="#faq"
