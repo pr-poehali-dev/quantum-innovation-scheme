@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Icon from "@/components/ui/icon"
+import { Link } from "react-router-dom"
 
 export function CTASection() {
   return (
@@ -30,18 +31,24 @@ export function CTASection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
+              asChild
               className="bg-violet-600 hover:bg-violet-700 text-white font-geist border-0 pulse-button text-lg px-8 py-4 gap-2"
             >
-              <Icon name="Rocket" size={18} fallback="Zap" />
-              Попробовать бесплатно
+              <Link to="/early-access">
+                <Icon name="Rocket" size={18} fallback="Zap" />
+                Попробовать бесплатно
+              </Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
+              asChild
               className="border-violet-500/40 text-violet-300 hover:bg-violet-500/10 hover:border-violet-500 text-lg px-8 py-4 bg-transparent font-geist gap-2"
             >
-              <Icon name="ArrowRight" size={18} fallback="ChevronRight" />
-              Получить ранний доступ
+              <Link to="/early-access">
+                <Icon name="ArrowRight" size={18} fallback="ChevronRight" />
+                Получить ранний доступ
+              </Link>
             </Button>
           </div>
 
